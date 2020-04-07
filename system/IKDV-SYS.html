@@ -1,0 +1,83 @@
+<html>
+
+<head>
+  <title>Visualization of COVID-19 Cases Using the System IKDV-SYS</title>
+</head>
+
+<body>
+  <div id="infopage">
+    <div id="title" style="text-align: center">
+      <h1 style="font-family: Times New Roman, serif; font-size: 36px">
+        IKDV-SYS: A System for Near Real-Time Interactive Kernel Density Visualization
+      </h1>
+      <h3 class="content" style="font-size: 24px;">
+        Tsz Nam Chan, Pak Lon Ip, Leong Hou U, Weng Hou Tong, Shivansh Mittal, Ye Li and Reynold Cheng
+      </h3>
+    </div>
+    <div id="content-page">
+      <h2>Background</h2>
+      <p class="content-page">
+      In 2020, there is a serious coronavirus disease (COVID-19) outbreak around the world, in which more than 1.36M people have been infected and nearly 76K people die from this disease, based on <a href = "https://coronavirus.jhu.edu/map.html"> the statistics from Johns Hopkins University </a> (last accessed: 7th April, 2020). The World Health Organization (WHO) has deemed COVID-19 a pandemic. To provide the first-hand information for the general public, many web-based visualization systems have been developed for visualizing the distribution / statistics of COVID-19 cases. However, these systems either cannot provide high visualization quality or cannot support interactive visualization operations (e.g., zoom in and panning operations). Kernel density visualization (KDV) is a solution to offer high visualization quality (for hot spot analysis) but its computational cost limits its usability. Here, we develop the first near real-time interactive visualization tool IKDV-SYS that is built on top of our prior study [1] on the efficient kernel density computation.
+      </p>
+      <h2>IKDV-SYS</h2>
+	  <p class="content-page">
+	  <!--This system can support different types of interactive visualization operations, e.g., zoom-in, panning etc, in nearly real-time for multiple users.-->
+      IKDV-SYS can be used to visualize the distribution of COVID-19 cases (based on heatmap) in the world. Compared with the state-of-the-art geographical software, e.g., QGIS and ArcGIS, IKDV-SYS is the first web-based system, which can support:
+	  </br>
+	  <b>(1) the near real-time kernel density visualization in single machine learning without using GPU and parallel computation</b>
+	  </br>
+	  <b>(2) different types of interactive visualization operations, e.g., zoom-in, panning etc, in nearly real-time</b>
+	  </br>
+	  
+	  We will release our system to the general public as soon as possible. Our demo paper is under submission to VLDB2020 (demo track) [2]. Hope that this paper can be accepted in this conference.
+      </p>
+      <h2>Acknowledgement</h2>
+      <p class="content-page">
+        Tsz Nam Chan, Shivansh Mittal and Reynold Cheng were supported by the Research Grants Council of HK (RGC Projects HKU 17229116, 106150091, and 17205115), the University of Hong Kong (Projects 104004572, 102009508, and 104004129), and the Innovation and Technology Commission of HK (ITF project MRP/029/18). Leong Hou U and Ye Li were funded by the National Key Research and Development Plan of China (No.2019YFB2102100), University of Macau (MYRG2019-00119-FST), the science and technology development fund, Macau SAR (SKL-IOTSC-2018-2020).
+      </p>
+	  <h2>Contact Information</h2>
+      <p class="content-page">
+        If you have any questions about our system, please feel free to contact Tsz Nam Chan, i.e., me (email: edisonchan2013928@gmail.com, just call me Edison) or Leong Hou U, Ryan (email: ryanlhu@um.edu.mo).
+      </p>	  
+      <h2>Reference</h2>
+	  <p class="content-page">
+      [1] Tsz Nam Chan, Reynold Cheng and Man Lung Yiu: QUAD: Quadratic-bound-based kernel density visualization. In SIGMOD, 2020.
+	  </br>
+	  [2] Tsz Nam Chan, Pak Lon Ip, Leong Hou U, Weng Hou Tong, Shivansh Mittal, Ye Li and Reynold Cheng IKDV-SYS: A System for Near Real-Time Interactive Kernel Density Visualization. Under submission to VLDB2020 (demo track).
+	  </p>
+    </div>
+  </div>
+</body>
+
+</html>
+
+<style>
+  #infopage {
+    font-family: serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* text-align: center; */
+    max-width: 1280px;
+    padding-left: 40px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    color: #2c3e50;
+    margin-top: 60px;
+  }
+
+  #infopage h2 {
+    font-family: Lora, serif;
+    font-size: 30px;
+  }
+
+  .content-page {
+    font-family: Gantium Basic, serif;
+    font-size: 20px;
+  }
+
+  #content-page {
+    margin-top: 80px;
+  }
+</style>
